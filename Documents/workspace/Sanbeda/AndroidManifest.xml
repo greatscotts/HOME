@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.sanbeda"
+    android:versionCode="1"
+    android:versionName="1.0" >
+ <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.app.sanbeda.MainActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="com.app.sanbeda.Logon"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.LOGON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.app.sanbeda.Sis"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.SIS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.app.sanbeda.Faculty"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.FACULTY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.app.sanbeda.Alumni"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.ALUMNI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.app.sanbeda.Apply"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.APPLY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              <activity
+            android:name="com.app.sanbeda.Test"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.TEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+           <activity
+            android:name="com.app.sanbeda.News"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.NEWS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+          
+            <activity
+            android:name="com.app.sanbeda.News2"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.NEWS2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+            <activity
+            android:name="com.app.sanbeda.Nation"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.NATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name="com.app.sanbeda.Technology"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.TECHNOLOGY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           <activity
+            android:name="com.app.sanbeda.Sports"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.SPORTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+           
+             <activity
+            android:name="com.app.sanbeda.Social"
+            android:label="@string/app_name"
+             
+             android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.SOCIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+             
+              <activity
+            android:name="com.app.sanbeda.Misc"
+            android:label="@string/app_name" 
+             
+             android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.MISC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              
+              <activity
+            android:name="com.app.sanbeda.Info"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              
+              <activity
+            android:name="com.app.sanbeda.Portal"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.PORTAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              <activity
+            android:name="com.app.sanbeda.About"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              
+              <activity
+            android:name="com.app.sanbeda.Contact"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.sanbeda.CONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+              
+               <activity
+            android:name="com.app.sanbeda.Stat"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.sanbeda.STAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
