@@ -1,0 +1,16 @@
+<% provide(:title, 'Sign up') %>
+<body id="new">  	
+<kiido><center>Sign up and be a kiido</center></kiido>
+</br>
+</br>
+<div id="signingup">
+<div class="row">
+  <div class="span6 offset7">
+    <%= form_for(@user) do |f| %>
+      <%= render 'fields', :f => f %>
+      <%= f.submit "Sign up", :class=> "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+</div>
+</body>

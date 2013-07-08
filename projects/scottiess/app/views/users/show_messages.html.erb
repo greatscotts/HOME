@@ -1,0 +1,20 @@
+<% provide(:title, @title) %>
+<div class="center">
+  <div class="span10 offset1">
+  </br>
+      <h1><%= @title %> (<%= @messages.count %>)</h1>
+    <% if @messages.any? %>
+      <ol class="microposts">
+        <%= render :partial=> "users/message", :collection=> @messages %>
+      </ol>
+      <%= will_paginate @messages %>
+    <% else %>
+  </br>
+      <h1>No messages!</h1>
+    </br>
+      <h1> To send a Message </h1>
+    </br>
+     <h1>Type "to" then "username" then your message *Note you can only send message to those people if both of you are admiring each other.</h1>
+    <% end %>
+  </div>
+</div>
