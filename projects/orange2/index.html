@@ -1,0 +1,375 @@
+<!-- Author: Michael Milstead / Mode87.com
+	 for Untame.net
+	 Twitter Bootstrap Tutorial
+	 Parallax Demo, 2013
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap Parallax Tutorial</title>
+	<meta name="description" content="Twitter Bootstrap Parallax Tutorial with HTML5 / CSS3 / JavaScript">
+	<meta name="author" content="Untame.net">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.6.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/init.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	$('#nav2').localScroll(800);
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+
+})
+</script>
+
+	<style type="text/css">
+		#intro { 
+			background: url(images/n1.jpg) 100% 0 no-repeat fixed; 
+			height: 100px; 
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		   padding: 500px 0;
+		}
+		#home { 
+			background: url(images/home.jpg) 50% 0 fixed; 
+			height: auto;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 200px 0;
+		}
+		 #fifth{
+	background: #ff5506;
+	height: 350px;
+	margin: 0 auto;
+	padding: 80px 0 0 0;
+}
+
+#last{
+	background: url(images/tw.png) 50% 0 fixed; 
+	height: 100px;
+	margin: 0 auto;
+	
+}
+		
+
+		#home { 
+			background: url(images/home.jpg) 50% 0 fixed; 
+			height: auto;  
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 200px 0;
+		}
+
+		#about { 
+			background: url(images/about.png) 50% 0 fixed; 
+			height: auto;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 1px 0;
+		    color: #fff;
+		}
+
+		#thrd { 
+			background: #ffffff;
+			height: auto;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 1px 0;
+		    color: #fff;
+		}
+
+		h6, #pixels{
+	font-family: "ProximaNovaA-Extrabld", Arial, sans-serif;
+	font-size:50px;
+	font-weight:700;
+	font-style:normal;
+	color: #ffffff;
+}
+h3.heading-tag {
+background: #ff5506;
+color: #fff;
+font-family: "europa",sans-serif;
+vertical-align: middle;
+display: inline-block;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 50px;
+padding-right: 50px;
+border-radius: 30px 30px 30px 30px;
+-webkit-border-radius: 30px 30px 30px 30px;
+-moz-border-radius: 30px 30px 30px 30px;
+position: relative;
+margin-top: -30px;
+margin-bottom: 40px;
+}
+h3 {
+font-size: 24.5px;
+}
+h1, #pixels{
+	font-family:"Museo 900", Verdana, serif;
+	font-size:12px;
+	font-weight:700;
+	font-style:normal;
+	color: #ffffff;
+}
+
+#nav2 {
+	list-style: none;
+	right:5em;
+	top:5px;
+	color:#ff5506;
+}
+.social-roll {
+	background-image: url('images/fbb.png');
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	border-radius: 50%;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.social-roll:hover {
+	background-image: url('images/fb.png');
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+.socials {
+	background-image: url('images/tw1.png');
+	height: 48px;
+	width: 48px;
+	margin: 10px;
+	float: left;
+	border-radius: 50%;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.a-roll:hover {
+	background-image: url('images/tw2.png');
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+
+#nav2 li {
+
+	margin-right:40px;
+	margin-bottom:20px;
+	position:absolute;
+	right:20px;
+	margin-top: -75px;
+}
+#nav3 li {
+
+	margin-left:40px;
+	margin-bottom:20px;
+	position:absolute;
+	left:20px;
+	margin-top: 95px;
+}
+
+.float-left{
+	float: left;	
+	margin: 0 0 0 100px;
+}
+.buttona {
+display: block;
+width: 200px;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+background-color: rgba(255, 255, 255, .25);
+text-align: center;
+text-decoration: none;
+padding: .625em 3em .625em 3em;
+font-family: 'Lato', Arial, sans-serif;
+font-size: 20px;
+font-weight: 400;
+text-transform: uppercase;
+color: #fff;
+margin: 0 auto;
+}
+a, a:visited, a:hover {
+color: #318ec3;
+text-decoration: none;
+outline: 0;
+}
+
+a:hover {
+color: #3a3a3a;
+}
+.button_primary a:hover {
+background-color: rgba(255, 255, 255, .4);
+}
+
+
+
+		/* Non-essential demo stuff */
+		.hero-unit {
+			background-color: #fff;
+		    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		}
+		.media-object { width: 64px; height: 64px; padding-bottom: 30px }
+	</style>
+
+</head>
+
+<body>
+
+
+
+		      
+		    </ul>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Section #1 -->
+	<section id="intro" data-speed="6" data-type="background">
+		
+		          <div class="float-right"><img src="images/1a.png">
+		          	<div class="story">
+	    	
+	        
+			
+	    </div> <!--.story-->
+	</div> <!--#fift
+		 </section>
+
+
+
+	<!-- Section #2 -->
+	<section id="home" data-speed="4" data-type="background">
+
+		<center><img src="images/gg.png"  />
+		<div class="container">
+			<div class="row-fluid">
+		        <div class="span4 well">
+		          <h2>Heading</h2>
+		          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
+		          <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+		        </div><!-- /.span4 -->
+		        <div class="span4 well">
+		          <h2>Heading</h2>
+		          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		          <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+		        </div><!-- /.span4 -->
+		        <div class="span4 well">
+		          <h2>Heading</h2>
+		          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>
+		          <p><a class="btn btn-success" href="#">View details &raquo;</a></p>
+		        </div><!-- /.span4 -->
+	    	</div>
+	    </div>
+	</section>
+
+	<!-- Section #3 -->
+	<section id="about" data-speed="2" data-type="background">
+		<div class="container">
+			<center><img src="images/3rd.png"  />
+			</div>
+
+
+<section id="thrd" data-speed="2" data-type="background">
+		<div class="container">
+			<CENTER><h3 class="heading-tag">
+				PRESS
+			</H3>
+			<center><a href="http://e27.co/2013/03/27/orange-apps-co-founder-gian-javelona-on-getting-an-early-start-with-entrepreneurship/"target="_blank"  ><img src="images/pr1.png"  /></a>
+
+				<a href="http://www.youtube.com/watch?v=Gkq5ec7Hyc4"target="_blank"  ><img src="images/pr2.png"  />
+
+				<a href="https://www.facebook.com/photo.php?fbid=253650841444903&set=a.144356122374376.35052.143345072475481&type=1&relevant_count=1"target="_blank"  ><img src="images/pr3.png"  />
+
+				<a href="http://www.youtube.com/watch?v=vjFD6FopQEY"target="_blank"  ><img src="images/pr4.png"  />
+
+				<a href="http://juangreatleap.com/2012/10/25/wunderkind"target="_blank"  ><img src="images/pr5.png"  />
+
+				<a href="http://ph.news.yahoo.com/young-app-rentice-054312760.html"target="_blank"  ><img src="images/pr6.png"  />
+
+				<a href="http://sgentrepreneurs.com/2012/11/02/gian-scottie-javelona-philippines-teen-developer-sensation/"target="_blank"  ><img src="images/pr8.png"  />
+
+				<a href="http://sg.news.yahoo.com/orange-apps-co-founder-gian-javelona-getting-early-033629173.html"target="_blank"  ><img src="images/pr7.png"  />&nbsp;
+
+					<a href="http://www.youtube.com/watch?v=PsRluubHDGk"target="_blank"  >
+				<img src="images/pr9.png"  />
+			</div>
+
+</div>
+	<div id="fifth">
+		<div class="story">
+		</br>
+		</br>
+		</br>
+	
+			<CENTER><h6>GET YOUR SCHOOL ON THE CLOUD</h6><br>
+				<br>
+		<br><a class="buttona " href="mailto:javelonagian@orangeapps.ph">Send us an email</a>
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+
+
+
+	
+<div id="last">
+		<div class="story footer">	
+			</br>
+		
+		
+<div class="story">
+	<ul id="nav2">
+			&nbsp; &nbsp; &nbsp;<a href="#intro" title="Scroll Top">
+	        			<img src="images/scrolltop.png" /></a>
+		<div class="story footer"></div>
+</div>
+
+		</div> <!--.story-->
+	    <ul id="nav2">
+	    	<br>
+	        <li>	<a href="https://twitter.com/BradSKnutson" target="_blank"><div class="facebook-roll social-roll"></div></a>
+	        		&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<li>	<a href="https://twitter.com/BradSKnutson" target="_blank"><div class="socials a-roll"></div></a>
+	        		</a>
+
+	        	</li>
+		</ul>
+	</div> <!--#fifth-->
+
+</body>
+</html>
+
